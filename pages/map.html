@@ -1,0 +1,19 @@
+<div id="map-container" style="position:relative">
+
+	<div id="map-canvas" ng-controller="mapController" class="ng-scope">
+		<map zoom="4" center="37.09024, -95.712891" on-center-changed="centerChanged()" disable-default-u-i="true" on-click="placeMarker()">
+		</map>
+	</div>
+
+</div>
+
+<div id="input-container" style="position:absolute; margin-top:-545px; margin-left:5px">
+
+	<form id="form" role="form">
+	    <div class="form-group move-down">
+	        <input style="font-family: Open Sans, sans-serif"size="80" type="text" id="Autocomplete" class="form-control" ng-autocomplete="result" details="details" placeholder="Tag kegs from east to west..."/>
+	    </div>
+
+    </form>
+
+</div>
